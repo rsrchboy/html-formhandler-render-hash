@@ -3,7 +3,7 @@ package HTML::FormHandler::Render::Hash;
 use Moose::Role;
 
 with 'HTML::FormHandler::Render::Simple' => {
-    excludes => [qw(
+    -excludes => [qw(
         render          render_field_struct render_text
         render_password render_hidden       render_select
         render_checkbox render_radio_group  render_textarea
